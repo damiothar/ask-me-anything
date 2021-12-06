@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+.input-group span {
+  margin: 0 .25rem;
+}
+
+
+input, button {
+  outline: none;
+  box-shadow: none;
+  border-radius: 0;
+  height: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0 .5rem;
+}
+input {
+  flex: 1;
+  margin-right: .5rem;
+  border: 1px solid black;
+}
+input.blue {
+  border: 1px solid blue;
+}
+input:focus {
+  box-shadow: inset 0 0 0 2rem rgba(0, 0, 0, 0.123);
+}
+input.blue:focus {
+  box-shadow: inset 0 0 0 2rem rgba(0, 0, 255, 0.123);
+}
+
+button {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+button.blue {
+  background-color: blue;
+}
+
+
+
+h2 {
+  font-size: 1.1rem;
+}
+
+.section {
+  width: 25rem;
+  max-width: 90%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid gray;
+}
+.section .heading {
+  margin-bottom: .25rem;
+}
+.section > :last-child {
+  margin-bottom: 0;
+}
+
+/* Options */
+.section--options .list {
+  font-style: italic;
+  margin-bottom: .25rem;
+}
+
+/* History */
+.section--history .list {
+  overflow: auto;
+  max-height: 10rem;
+}
+.section--history .list .log {
+  padding: .5rem;
+  background-color: lightgray;
+  margin-bottom: 0.25rem;
+}
+.section--history .list .log .question {
+  font-weight: bold;
+}
+.section--history .list .log .answer {
+  font-style: italic;
+}
+
+/* Modal Answer */
+.modal--answer {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: blue;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal--answer .question {
+  font-weight: bold;
+}
+.modal--answer .answer {
+  font-style: italic;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.modal--answer button {
+  background-color: white;
+  color: black;
+}
+
+/* Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+background: gray;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: black;
+}

@@ -1,2 +1,2 @@
-# ask-me-anything
+# random-answer-generator
 Created with CodeSandbox
