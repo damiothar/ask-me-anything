@@ -1,6 +1,3 @@
-// Styles
-import "./styles.scss";
-
 // Options
 let defaultOptions = [
   "As I see it, yes",
